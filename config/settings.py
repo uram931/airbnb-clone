@@ -38,9 +38,13 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-THIRD_PARTY_APPS = []  # 다른 사람이 만든 것을 IMPORT하기 위한 목적으로 앞으로 추가할 부분
+THIRD_PARTY_APPS = ["django_countries"]  # 다른 사람이 만든 것을 IMPORT하기 위한 목적으로 앞으로 추가할 부분
 
-PROJECT_APPS = ["users.apps.UsersConfig"]
+PROJECT_APPS = [
+    "core.apps.CoreConfig",
+    "users.apps.UsersConfig",
+    "rooms.apps.RoomsConfig",
+]
 
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
